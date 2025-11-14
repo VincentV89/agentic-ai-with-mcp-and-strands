@@ -169,7 +169,7 @@ def ingest_knowledge_base_documents(knowledge_base_id, data_source_id, s3_bucket
 def main():
     folder = 'pets-kb-files'
     if not os.path.isdir(folder):
-        download_file('https://d2qrbbbqnxtln.cloudfront.net/pets-kb-files.zip')
+        download_file('https://d3k0crbaw2nl4d.cloudfront.net/pets-kb-files.zip')
         extract_zip_file('pets-kb-files.zip')
         s3_bucket = create_s3_bucket_with_random_suffix('bedrock-kb-bucket')
         print(f'Created S3 bucket: {s3_bucket}')
